@@ -1,6 +1,7 @@
 import "./Main.scss";
-
 import React from "react";
+
+import sideLogo from "../../assets/png/react-side-img.png";
 
 export default function Main() {
   return (
@@ -13,6 +14,7 @@ export default function Main() {
         <li>Is maintained by Facebook</li>
         <li>Powers thousands of enterprise apps, including mobile apps</li>
       </ul>
+      <img src={sideLogo} alt="" className="sideLogo" />
     </div>
   );
 }
