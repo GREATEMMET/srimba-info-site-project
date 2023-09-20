@@ -16,6 +16,9 @@ $fw-bold: 700;
   background-color: $dark;
   padding: 50px 50px;
   position: relative;
+  background-image: url(/src/assets/png/react-side-img.png);
+  background-repeat: no-repeat;
+  background-position: right 50%;
 }
 
 .mainHeading {
@@ -28,7 +31,7 @@ $fw-bold: 700;
   font-size: 16px;
   color: $white;
   max-width: 400px;
-  list-style-type: none;
+  // list-style-type: none;
   margin-left: 30px;
   margin-bottom: 100px;
   
@@ -38,7 +41,6 @@ $fw-bold: 700;
     font-weight: $fw-light;
     gap: 10px;
     position: relative;
-    z-index: 2;
   }
 
   li::before {
@@ -53,13 +55,6 @@ $fw-bold: 700;
     top: 7px;
     margin-inline: -20px;
   }
+
 }
 
-.sideLogo {
-  position: absolute !important;
-  width: auto;
-  height: 250px;
-  right: 0;
-  top: 28%;
-  z-index: 1;
-}
