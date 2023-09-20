@@ -1,0 +1,45 @@
+// Varibles
+// Colors
+$light-blue : #61DAFB;
+$dark : #282D35;
+$dark-darker : #21222A;
+$white : #FFFFFF;
+$fade-white : #33373E;
+
+
+//Font Weight 
+$fw-thin: 100;
+$fw-light: 300;
+$fw-mid: 500;
+$fw-bold: 700;
+
+
+.navbar{
+    height: 91px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding-inline: 20px;
+    background-color: $dark-darker;
+
+    .navLogo{
+        width: 26px;
+    }
+
+    .navTitle{
+        color: $light-blue;
+        margin-right: auto;
+    }
+
+    .navProject{
+        color: $white;
+        font-size: 16px;
+        font-weight: 500;
+    }
+}
+
+
+
+
+
+

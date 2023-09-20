@@ -1,0 +1,53 @@
+// Varibles
+// Colors
+$light-blue: #61dafb;
+$dark: #282d35;
+$dark-darker: #21222a;
+$white: #ffffff;
+$fade-white: #33373e;
+
+//Font Weight
+$fw-thin: 100;
+$fw-light: 300;
+$fw-mid: 500;
+$fw-bold: 700;
+
+.main {
+  background-color: $dark;
+  padding: 50px 50px;
+}
+
+.mainHeading {
+  color: $white;
+  font-weight: $fw-bold;
+  margin: 0 0 50px 0;
+}
+
+.listItems {
+  font-size: 16px;
+  color: $white;
+  max-width: 400px;
+  list-style-type: none;
+  margin-left: 30px;
+  margin-bottom: 100px;
+
+  li {
+    margin: 10px;
+    font-weight: $fw-light;
+    gap: 10px;
+    position: relative;
+  }
+
+  li::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background-color: $light-blue;
+    border-radius: 50%;
+    margin-right: 4px;
+    position: absolute;
+    top: 7px;
+    margin-inline: -20px;
+  }
+}
