@@ -1,45 +1,69 @@
 // Varibles
 // Colors
-$light-blue : #61DAFB;
-$dark : #282D35;
-$dark-darker : #21222A;
-$white : #FFFFFF;
-$fade-white : #33373E;
+$light-blue: #61dafb;
+$dark: #282d35;
+$dark-darker: #21222a;
+$white: #ffffff;
+$fade-white: #33373e;
+$black: black;
 
-
-//Font Weight 
+//Font Weight
 $fw-thin: 100;
 $fw-light: 300;
 $fw-mid: 500;
 $fw-bold: 700;
 
+.navbar {
+  height: 91px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding-inline: 20px;
+  background-color: $white;
+  box-sizing: border-box;
 
-.navbar{
-    height: 91px;
+  .navLogo {
+    width: 26px;
+  }
+
+  .navTitle {
+    color: $light-blue;
+    margin-right: auto;
+  }
+
+  .navProject {
+    color: $black;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .navToggler {
     display: flex;
     align-items: center;
     gap: 4px;
-    padding-inline: 20px;
-    background-color: $dark-darker;
+  }
 
-    .navLogo{
-        width: 26px;
-    }
+  .navToggleSlider {
+    width: 25px;
+    height: 13px;
+    border: 1px solid $dark;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    box-sizing: content-box;
+    background-color: $dark;
+  }
 
-    .navTitle{
-        color: $light-blue;
-        margin-right: auto;
-    }
-
-    .navProject{
-        color: $white;
-        font-size: 16px;
-        font-weight: 500;
-    }
+  .navToggleSliderCircle {
+    background-color: $white;
+    height: 13px;
+    width: 13px;
+    border-radius: 50%;
+  }
+  
 }
 
-
-
-
-
-
+.navbar.dark {
+  background-color: $dark-darker;
+}
